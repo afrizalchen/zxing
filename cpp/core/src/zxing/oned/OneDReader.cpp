@@ -224,4 +224,21 @@ void OneDReader::recordPattern(Ref<BitArray> row,
   }
 }
 
+void OneDReader::recordPatternInReverse(Ref<BitArray> row,
+                               int start,
+                               vector<int>& counters) {
+    int numTransitionsLeft = counters.size();
+    boolean last = row->get(start);
+    while (start > 0 && numTransitionsLeft >= 0) {
+        if (row->get(--start) != last) {
+            numTransitionsLeft--;
+            last = !last;
+        }
+    }
+    if (numTransitionsLeft >= 0) {
+        throw NotFoundException();
+    }
+    recordPattern(row, start + 1, counters);
+}
+
 OneDReader::~OneDReader() {}
