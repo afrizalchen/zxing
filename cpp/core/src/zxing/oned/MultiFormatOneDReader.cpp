@@ -23,12 +23,14 @@
 #include <zxing/oned/Code93Reader.h>
 #include <zxing/oned/CodaBarReader.h>
 #include <zxing/oned/ITFReader.h>
+#include <zxing/oned/rss/RSS14Reader.h>
 #include <zxing/ReaderException.h>
 #include <zxing/NotFoundException.h>
 
 using zxing::Ref;
 using zxing::Result;
 using zxing::oned::MultiFormatOneDReader;
+using zxing::oned::rss::RSS14Reader;
 
 // VC++
 using zxing::DecodeHints;
@@ -56,11 +58,11 @@ MultiFormatOneDReader::MultiFormatOneDReader(DecodeHints hints) : readers() {
   if (hints.containsFormat(BarcodeFormat::CODABAR)) {
     readers.push_back(Ref<OneDReader>(new CodaBarReader()));
   }
-/*
+
   if (hints.containsFormat(BarcodeFormat::RSS_14)) {
     readers.push_back(Ref<OneDReader>(new RSS14Reader()));
   }
-*/
+
 /*
   if (hints.containsFormat(BarcodeFormat::RSS_EXPANDED)) {
     readers.push_back(Ref<OneDReader>(new RSS14ExpandedReader()));
@@ -73,7 +75,7 @@ MultiFormatOneDReader::MultiFormatOneDReader(DecodeHints hints) : readers() {
     readers.push_back(Ref<OneDReader>(new Code93Reader()));
     readers.push_back(Ref<OneDReader>(new Code128Reader()));
     readers.push_back(Ref<OneDReader>(new ITFReader()));
-    // readers.push_back(Ref<OneDReader>(new RSS14Reader()));
+    readers.push_back(Ref<OneDReader>(new RSS14Reader()));
     // readers.push_back(Ref<OneDReader>(new RSS14ExpandedReader()));
   }
 }
