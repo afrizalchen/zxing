@@ -18,11 +18,8 @@
  * limitations under the License.
  */
 
-#import "FormatReader.h"
+#import "MultiFormatReader.h"
 #import <zxing/MultiFormatReader.h>
-
-@interface MultiFormatReader : FormatReader
-@end
 
 @implementation MultiFormatReader
 

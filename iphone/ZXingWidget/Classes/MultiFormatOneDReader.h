@@ -8,10 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import "FormatReader.h"
+#include <zxing/DecodeHints.h>
 
 
 @interface MultiFormatOneDReader : FormatReader {
-
 }
 - (id) init;
+- (id) initWithHints:(zxing::DecodeHints::DecodeHints)hints;
 @end
