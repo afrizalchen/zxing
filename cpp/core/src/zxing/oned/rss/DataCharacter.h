@@ -24,6 +24,8 @@ namespace zxing {
                 int getValue() const;
                 int getChecksumPortion() const;
                 bool operator==(const DataCharacter &other) const;
+                bool equals(const DataCharacter &other) const;
+                bool equals(Ref<DataCharacter> other) const;
             };
         }
     }

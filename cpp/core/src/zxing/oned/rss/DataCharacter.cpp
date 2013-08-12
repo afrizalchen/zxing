@@ -8,6 +8,7 @@
 
 #include <zxing/oned/rss/DataCharacter.h>
 
+using zxing::Ref;
 using zxing::oned::rss::DataCharacter;
 
 DataCharacter::DataCharacter(int value, int checksumPortion) {
@@ -15,7 +16,9 @@ DataCharacter::DataCharacter(int value, int checksumPortion) {
     _checksumPortion = checksumPortion;
 }
 
-DataCharacter::~DataCharacter() {}
+DataCharacter::~DataCharacter() {
+
+}
 
 
 int DataCharacter::getValue() const {
@@ -27,7 +30,16 @@ int DataCharacter::getChecksumPortion() const {
 }
 
 bool DataCharacter::operator==(const DataCharacter &other) const {
+    return this->equals(other);
+}
+
+bool DataCharacter::equals(const DataCharacter &other) const {
     if (_value != other._value) return false;
     if (_checksumPortion != other._checksumPortion) return false;
-    return true;
+    return  true;
+}
+
+bool DataCharacter::equals(Ref<DataCharacter> other) const {
+    if (other.empty()) return false;
+    return this->equals(*(other.object_));
 }

@@ -8,6 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		1022ACD917AE2DE2009FAF21 /* MultiFormatReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 1022ACD817AE2DE2009FAF21 /* MultiFormatReader.h */; };
+		1022ACDD17AE8F1C009FAF21 /* ExpandedRow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1022ACDB17AE8F1C009FAF21 /* ExpandedRow.cpp */; };
+		1022ACDE17AE8F1C009FAF21 /* ExpandedRow.h in Headers */ = {isa = PBXBuildFile; fileRef = 1022ACDC17AE8F1C009FAF21 /* ExpandedRow.h */; };
+		1022ACE217AE9562009FAF21 /* RSSExpandedReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1022ACE017AE9562009FAF21 /* RSSExpandedReader.cpp */; };
+		1022ACE317AE9562009FAF21 /* RSSExpandedReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 1022ACE117AE9562009FAF21 /* RSSExpandedReader.h */; };
+		1022ACE617AEA6FE009FAF21 /* AbstractExpandedDecoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1022ACE417AEA6FE009FAF21 /* AbstractExpandedDecoder.cpp */; };
+		1022ACE717AEA6FE009FAF21 /* AbstractExpandedDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 1022ACE517AEA6FE009FAF21 /* AbstractExpandedDecoder.h */; };
+		1022ACEA17AEA810009FAF21 /* CurrentParsingState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1022ACE817AEA810009FAF21 /* CurrentParsingState.cpp */; };
+		1022ACEB17AEA810009FAF21 /* CurrentParsingState.h in Headers */ = {isa = PBXBuildFile; fileRef = 1022ACE917AEA810009FAF21 /* CurrentParsingState.h */; };
+		1022ACEE17AEAAA0009FAF21 /* DecodedObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1022ACEC17AEAAA0009FAF21 /* DecodedObject.cpp */; };
+		1022ACEF17AEAAA0009FAF21 /* DecodedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 1022ACED17AEAAA0009FAF21 /* DecodedObject.h */; };
+		104A576117B0AA0F00E0D728 /* BlockParsedResult.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 104A575F17B0AA0F00E0D728 /* BlockParsedResult.cpp */; };
+		104A576217B0AA0F00E0D728 /* BlockParsedResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 104A576017B0AA0F00E0D728 /* BlockParsedResult.h */; };
+		104A576517B0AC7800E0D728 /* GeneralAppIdDecoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 104A576317B0AC7800E0D728 /* GeneralAppIdDecoder.cpp */; };
+		104A576617B0AC7800E0D728 /* GeneralAppIdDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 104A576417B0AC7800E0D728 /* GeneralAppIdDecoder.h */; };
+		104A576917B2B43A00E0D728 /* AnyAIDecoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 104A576717B2B43800E0D728 /* AnyAIDecoder.cpp */; };
+		104A576A17B2B43A00E0D728 /* AnyAIDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 104A576817B2B43900E0D728 /* AnyAIDecoder.h */; };
+		104A576D17B2B5FB00E0D728 /* AI01decoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 104A576B17B2B5FA00E0D728 /* AI01decoder.cpp */; };
+		104A576E17B2B5FB00E0D728 /* AI01decoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 104A576C17B2B5FA00E0D728 /* AI01decoder.h */; };
+		1053FCA817AF4CBA00152CFD /* DecodedChar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1053FCA617AF4CB900152CFD /* DecodedChar.cpp */; };
+		1053FCA917AF4CBA00152CFD /* DecodedChar.h in Headers */ = {isa = PBXBuildFile; fileRef = 1053FCA717AF4CB900152CFD /* DecodedChar.h */; };
+		1053FCAC17AF4E1B00152CFD /* DecodedNumeric.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1053FCAA17AF4E1B00152CFD /* DecodedNumeric.cpp */; };
+		1053FCAD17AF4E1B00152CFD /* DecodedNumeric.h in Headers */ = {isa = PBXBuildFile; fileRef = 1053FCAB17AF4E1B00152CFD /* DecodedNumeric.h */; };
+		1053FCB017AF75B700152CFD /* DecodedInformation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1053FCAE17AF75B700152CFD /* DecodedInformation.cpp */; };
+		1053FCB117AF75B700152CFD /* DecodedInformation.h in Headers */ = {isa = PBXBuildFile; fileRef = 1053FCAF17AF75B700152CFD /* DecodedInformation.h */; };
+		1053FCB417AF77DE00152CFD /* FieldParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1053FCB217AF77DD00152CFD /* FieldParser.cpp */; };
+		1053FCB517AF77DE00152CFD /* FieldParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 1053FCB317AF77DE00152CFD /* FieldParser.h */; };
 		105A9B6817ACEAFD008CF4B8 /* AbstractRSSReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 105A9B5717ACEAFD008CF4B8 /* AbstractRSSReader.cpp */; };
 		105A9B6917ACEAFD008CF4B8 /* AbstractRSSReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 105A9B5817ACEAFD008CF4B8 /* AbstractRSSReader.h */; };
 		105A9B6A17ACEAFD008CF4B8 /* DataCharacter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 105A9B5917ACEAFD008CF4B8 /* DataCharacter.cpp */; };
@@ -24,6 +50,22 @@
 		105A9B7517ACEAFD008CF4B8 /* RSS14Reader.h in Headers */ = {isa = PBXBuildFile; fileRef = 105A9B6517ACEAFD008CF4B8 /* RSS14Reader.h */; };
 		105A9B7617ACEAFD008CF4B8 /* RSSUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 105A9B6617ACEAFD008CF4B8 /* RSSUtils.cpp */; };
 		105A9B7717ACEAFD008CF4B8 /* RSSUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 105A9B6717ACEAFD008CF4B8 /* RSSUtils.h */; };
+		10807EE617B4884D00EB36AE /* AI01weightDecoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 10807EE417B4884D00EB36AE /* AI01weightDecoder.cpp */; };
+		10807EE717B4884D00EB36AE /* AI01weightDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 10807EE517B4884D00EB36AE /* AI01weightDecoder.h */; };
+		10807EEA17B48A2800EB36AE /* AI013x0xDecoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 10807EE817B48A2800EB36AE /* AI013x0xDecoder.cpp */; };
+		10807EEB17B48A2800EB36AE /* AI013x0xDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 10807EE917B48A2800EB36AE /* AI013x0xDecoder.h */; };
+		10807EEE17B4ADAB00EB36AE /* AI01AndOtherAIs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 10807EEC17B4ADAB00EB36AE /* AI01AndOtherAIs.cpp */; };
+		10807EEF17B4ADAB00EB36AE /* AI01AndOtherAIs.h in Headers */ = {isa = PBXBuildFile; fileRef = 10807EED17B4ADAB00EB36AE /* AI01AndOtherAIs.h */; };
+		10807EF217B4AF1800EB36AE /* AI013x0x1xDecoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 10807EF017B4AF1800EB36AE /* AI013x0x1xDecoder.cpp */; };
+		10807EF317B4AF1800EB36AE /* AI013x0x1xDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 10807EF117B4AF1800EB36AE /* AI013x0x1xDecoder.h */; };
+		10807EF617B4BB3D00EB36AE /* AI013103decoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 10807EF417B4BB3C00EB36AE /* AI013103decoder.cpp */; };
+		10807EF717B4BB3D00EB36AE /* AI013103decoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 10807EF517B4BB3D00EB36AE /* AI013103decoder.h */; };
+		10807EFA17B4BCB000EB36AE /* AI01320xDecoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 10807EF817B4BCAF00EB36AE /* AI01320xDecoder.cpp */; };
+		10807EFB17B4BCB000EB36AE /* AI01320xDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 10807EF917B4BCB000EB36AE /* AI01320xDecoder.h */; };
+		10807EFE17B4BD9A00EB36AE /* AI01392xDecoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 10807EFC17B4BD9900EB36AE /* AI01392xDecoder.cpp */; };
+		10807EFF17B4BD9A00EB36AE /* AI01392xDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 10807EFD17B4BD9900EB36AE /* AI01392xDecoder.h */; };
+		10807F0217B4DBD600EB36AE /* AI01393xDecoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 10807F0017B4DBD500EB36AE /* AI01393xDecoder.cpp */; };
+		10807F0317B4DBD600EB36AE /* AI01393xDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 10807F0117B4DBD500EB36AE /* AI01393xDecoder.h */; };
 		1D0CBDF913D0DD5D003D0F8D /* BizcardResultParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D0CBDF713D0DD5D003D0F8D /* BizcardResultParser.h */; };
 		1D0CBDFA13D0DD5D003D0F8D /* BizcardResultParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0CBDF813D0DD5D003D0F8D /* BizcardResultParser.m */; };
 		1D4F11FB13D89EFD0032F754 /* VCardResultParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D4F11F913D89EFD0032F754 /* VCardResultParser.h */; };
@@ -343,6 +385,32 @@
 
 /* Begin PBXFileReference section */
 		1022ACD817AE2DE2009FAF21 /* MultiFormatReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MultiFormatReader.h; path = Classes/MultiFormatReader.h; sourceTree = "<group>"; };
+		1022ACDB17AE8F1C009FAF21 /* ExpandedRow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ExpandedRow.cpp; sourceTree = "<group>"; };
+		1022ACDC17AE8F1C009FAF21 /* ExpandedRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpandedRow.h; sourceTree = "<group>"; };
+		1022ACE017AE9562009FAF21 /* RSSExpandedReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RSSExpandedReader.cpp; sourceTree = "<group>"; };
+		1022ACE117AE9562009FAF21 /* RSSExpandedReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSExpandedReader.h; sourceTree = "<group>"; };
+		1022ACE417AEA6FE009FAF21 /* AbstractExpandedDecoder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AbstractExpandedDecoder.cpp; path = decoders/AbstractExpandedDecoder.cpp; sourceTree = "<group>"; };
+		1022ACE517AEA6FE009FAF21 /* AbstractExpandedDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AbstractExpandedDecoder.h; path = decoders/AbstractExpandedDecoder.h; sourceTree = "<group>"; };
+		1022ACE817AEA810009FAF21 /* CurrentParsingState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CurrentParsingState.cpp; path = decoders/CurrentParsingState.cpp; sourceTree = "<group>"; };
+		1022ACE917AEA810009FAF21 /* CurrentParsingState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CurrentParsingState.h; path = decoders/CurrentParsingState.h; sourceTree = "<group>"; };
+		1022ACEC17AEAAA0009FAF21 /* DecodedObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DecodedObject.cpp; path = decoders/DecodedObject.cpp; sourceTree = "<group>"; };
+		1022ACED17AEAAA0009FAF21 /* DecodedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DecodedObject.h; path = decoders/DecodedObject.h; sourceTree = "<group>"; };
+		104A575F17B0AA0F00E0D728 /* BlockParsedResult.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BlockParsedResult.cpp; path = decoders/BlockParsedResult.cpp; sourceTree = "<group>"; };
+		104A576017B0AA0F00E0D728 /* BlockParsedResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BlockParsedResult.h; path = decoders/BlockParsedResult.h; sourceTree = "<group>"; };
+		104A576317B0AC7800E0D728 /* GeneralAppIdDecoder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GeneralAppIdDecoder.cpp; path = decoders/GeneralAppIdDecoder.cpp; sourceTree = "<group>"; };
+		104A576417B0AC7800E0D728 /* GeneralAppIdDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GeneralAppIdDecoder.h; path = decoders/GeneralAppIdDecoder.h; sourceTree = "<group>"; };
+		104A576717B2B43800E0D728 /* AnyAIDecoder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AnyAIDecoder.cpp; path = decoders/AnyAIDecoder.cpp; sourceTree = "<group>"; };
+		104A576817B2B43900E0D728 /* AnyAIDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnyAIDecoder.h; path = decoders/AnyAIDecoder.h; sourceTree = "<group>"; };
+		104A576B17B2B5FA00E0D728 /* AI01decoder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AI01decoder.cpp; path = decoders/AI01decoder.cpp; sourceTree = "<group>"; };
+		104A576C17B2B5FA00E0D728 /* AI01decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AI01decoder.h; path = decoders/AI01decoder.h; sourceTree = "<group>"; };
+		1053FCA617AF4CB900152CFD /* DecodedChar.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DecodedChar.cpp; path = decoders/DecodedChar.cpp; sourceTree = "<group>"; };
+		1053FCA717AF4CB900152CFD /* DecodedChar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DecodedChar.h; path = decoders/DecodedChar.h; sourceTree = "<group>"; };
+		1053FCAA17AF4E1B00152CFD /* DecodedNumeric.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DecodedNumeric.cpp; path = decoders/DecodedNumeric.cpp; sourceTree = "<group>"; };
+		1053FCAB17AF4E1B00152CFD /* DecodedNumeric.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DecodedNumeric.h; path = decoders/DecodedNumeric.h; sourceTree = "<group>"; };
+		1053FCAE17AF75B700152CFD /* DecodedInformation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DecodedInformation.cpp; path = decoders/DecodedInformation.cpp; sourceTree = "<group>"; };
+		1053FCAF17AF75B700152CFD /* DecodedInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DecodedInformation.h; path = decoders/DecodedInformation.h; sourceTree = "<group>"; };
+		1053FCB217AF77DD00152CFD /* FieldParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FieldParser.cpp; path = decoders/FieldParser.cpp; sourceTree = "<group>"; };
+		1053FCB317AF77DE00152CFD /* FieldParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FieldParser.h; path = decoders/FieldParser.h; sourceTree = "<group>"; };
 		105A9B5717ACEAFD008CF4B8 /* AbstractRSSReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AbstractRSSReader.cpp; path = rss/AbstractRSSReader.cpp; sourceTree = "<group>"; };
 		105A9B5817ACEAFD008CF4B8 /* AbstractRSSReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AbstractRSSReader.h; path = rss/AbstractRSSReader.h; sourceTree = "<group>"; };
 		105A9B5917ACEAFD008CF4B8 /* DataCharacter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DataCharacter.cpp; path = rss/DataCharacter.cpp; sourceTree = "<group>"; };
@@ -359,6 +427,23 @@
 		105A9B6517ACEAFD008CF4B8 /* RSS14Reader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSS14Reader.h; path = rss/RSS14Reader.h; sourceTree = "<group>"; };
 		105A9B6617ACEAFD008CF4B8 /* RSSUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RSSUtils.cpp; path = rss/RSSUtils.cpp; sourceTree = "<group>"; };
 		105A9B6717ACEAFD008CF4B8 /* RSSUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSSUtils.h; path = rss/RSSUtils.h; sourceTree = "<group>"; };
+		10807EE417B4884D00EB36AE /* AI01weightDecoder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AI01weightDecoder.cpp; path = decoders/AI01weightDecoder.cpp; sourceTree = "<group>"; };
+		10807EE517B4884D00EB36AE /* AI01weightDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AI01weightDecoder.h; path = decoders/AI01weightDecoder.h; sourceTree = "<group>"; };
+		10807EE817B48A2800EB36AE /* AI013x0xDecoder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AI013x0xDecoder.cpp; path = decoders/AI013x0xDecoder.cpp; sourceTree = "<group>"; };
+		10807EE917B48A2800EB36AE /* AI013x0xDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AI013x0xDecoder.h; path = decoders/AI013x0xDecoder.h; sourceTree = "<group>"; };
+		10807EEC17B4ADAB00EB36AE /* AI01AndOtherAIs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AI01AndOtherAIs.cpp; path = decoders/AI01AndOtherAIs.cpp; sourceTree = "<group>"; };
+		10807EED17B4ADAB00EB36AE /* AI01AndOtherAIs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AI01AndOtherAIs.h; path = decoders/AI01AndOtherAIs.h; sourceTree = "<group>"; };
+		10807EF017B4AF1800EB36AE /* AI013x0x1xDecoder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AI013x0x1xDecoder.cpp; path = decoders/AI013x0x1xDecoder.cpp; sourceTree = "<group>"; };
+		10807EF117B4AF1800EB36AE /* AI013x0x1xDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AI013x0x1xDecoder.h; path = decoders/AI013x0x1xDecoder.h; sourceTree = "<group>"; };
+		10807EF417B4BB3C00EB36AE /* AI013103decoder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AI013103decoder.cpp; path = decoders/AI013103decoder.cpp; sourceTree = "<group>"; };
+		10807EF517B4BB3D00EB36AE /* AI013103decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AI013103decoder.h; path = decoders/AI013103decoder.h; sourceTree = "<group>"; };
+		10807EF817B4BCAF00EB36AE /* AI01320xDecoder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AI01320xDecoder.cpp; path = decoders/AI01320xDecoder.cpp; sourceTree = "<group>"; };
+		10807EF917B4BCB000EB36AE /* AI01320xDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AI01320xDecoder.h; path = decoders/AI01320xDecoder.h; sourceTree = "<group>"; };
+		10807EFC17B4BD9900EB36AE /* AI01392xDecoder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AI01392xDecoder.cpp; path = decoders/AI01392xDecoder.cpp; sourceTree = "<group>"; };
+		10807EFD17B4BD9900EB36AE /* AI01392xDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AI01392xDecoder.h; path = decoders/AI01392xDecoder.h; sourceTree = "<group>"; };
+		10807F0017B4DBD500EB36AE /* AI01393xDecoder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AI01393xDecoder.cpp; path = decoders/AI01393xDecoder.cpp; sourceTree = "<group>"; };
+		10807F0117B4DBD500EB36AE /* AI01393xDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AI01393xDecoder.h; path = decoders/AI01393xDecoder.h; sourceTree = "<group>"; };
+		10807F0417B5E4E700EB36AE /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		1D0CBDF713D0DD5D003D0F8D /* BizcardResultParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BizcardResultParser.h; path = Classes/resultParsers/BizcardResultParser.h; sourceTree = "<group>"; };
 		1D0CBDF813D0DD5D003D0F8D /* BizcardResultParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BizcardResultParser.m; path = Classes/resultParsers/BizcardResultParser.m; sourceTree = "<group>"; };
 		1D4F11F913D89EFD0032F754 /* VCardResultParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VCardResultParser.h; path = Classes/resultParsers/VCardResultParser.h; sourceTree = "<group>"; };
@@ -707,6 +792,7 @@
 		0867D691FE84028FC02AAC07 /* ZXingWidget */ = {
 			isa = PBXGroup;
 			children = (
+				10807F0417B5E4E700EB36AE /* libc++.dylib */,
 				1D6038A113DF6FBF006F4B51 /* Tests */,
 				E53458B311987396000CB77F /* CoreSrc */,
 				08FB77AEFE84172EC02AAC07 /* Classes */,
@@ -770,6 +856,51 @@
 			name = Classes;
 			sourceTree = "<group>";
 		};
+		1022ACDF17AE952A009FAF21 /* decoders */ = {
+			isa = PBXGroup;
+			children = (
+				1022ACE417AEA6FE009FAF21 /* AbstractExpandedDecoder.cpp */,
+				1022ACE517AEA6FE009FAF21 /* AbstractExpandedDecoder.h */,
+				10807EF417B4BB3C00EB36AE /* AI013103decoder.cpp */,
+				10807EF517B4BB3D00EB36AE /* AI013103decoder.h */,
+				10807EF817B4BCAF00EB36AE /* AI01320xDecoder.cpp */,
+				10807EF917B4BCB000EB36AE /* AI01320xDecoder.h */,
+				10807EFC17B4BD9900EB36AE /* AI01392xDecoder.cpp */,
+				10807EFD17B4BD9900EB36AE /* AI01392xDecoder.h */,
+				10807F0017B4DBD500EB36AE /* AI01393xDecoder.cpp */,
+				10807F0117B4DBD500EB36AE /* AI01393xDecoder.h */,
+				10807EF017B4AF1800EB36AE /* AI013x0x1xDecoder.cpp */,
+				10807EF117B4AF1800EB36AE /* AI013x0x1xDecoder.h */,
+				10807EE817B48A2800EB36AE /* AI013x0xDecoder.cpp */,
+				10807EE917B48A2800EB36AE /* AI013x0xDecoder.h */,
+				10807EEC17B4ADAB00EB36AE /* AI01AndOtherAIs.cpp */,
+				10807EED17B4ADAB00EB36AE /* AI01AndOtherAIs.h */,
+				104A576B17B2B5FA00E0D728 /* AI01decoder.cpp */,
+				104A576C17B2B5FA00E0D728 /* AI01decoder.h */,
+				10807EE417B4884D00EB36AE /* AI01weightDecoder.cpp */,
+				10807EE517B4884D00EB36AE /* AI01weightDecoder.h */,
+				104A576717B2B43800E0D728 /* AnyAIDecoder.cpp */,
+				104A576817B2B43900E0D728 /* AnyAIDecoder.h */,
+				104A575F17B0AA0F00E0D728 /* BlockParsedResult.cpp */,
+				104A576017B0AA0F00E0D728 /* BlockParsedResult.h */,
+				1022ACE817AEA810009FAF21 /* CurrentParsingState.cpp */,
+				1022ACE917AEA810009FAF21 /* CurrentParsingState.h */,
+				1053FCA617AF4CB900152CFD /* DecodedChar.cpp */,
+				1053FCA717AF4CB900152CFD /* DecodedChar.h */,
+				1053FCAE17AF75B700152CFD /* DecodedInformation.cpp */,
+				1053FCAF17AF75B700152CFD /* DecodedInformation.h */,
+				1053FCAA17AF4E1B00152CFD /* DecodedNumeric.cpp */,
+				1053FCAB17AF4E1B00152CFD /* DecodedNumeric.h */,
+				1022ACEC17AEAAA0009FAF21 /* DecodedObject.cpp */,
+				1022ACED17AEAAA0009FAF21 /* DecodedObject.h */,
+				1053FCB217AF77DD00152CFD /* FieldParser.cpp */,
+				1053FCB317AF77DE00152CFD /* FieldParser.h */,
+				104A576317B0AC7800E0D728 /* GeneralAppIdDecoder.cpp */,
+				104A576417B0AC7800E0D728 /* GeneralAppIdDecoder.h */,
+			);
+			name = decoders;
+			sourceTree = "<group>";
+		};
 		105A9B5617ACEAEE008CF4B8 /* rss */ = {
 			isa = PBXGroup;
 			children = (
@@ -797,6 +928,11 @@
 				105A9B5D17ACEAFD008CF4B8 /* BitArrayBuilder.h */,
 				105A9B5E17ACEAFD008CF4B8 /* ExpandedPair.cpp */,
 				105A9B5F17ACEAFD008CF4B8 /* ExpandedPair.h */,
+				1022ACDB17AE8F1C009FAF21 /* ExpandedRow.cpp */,
+				1022ACDC17AE8F1C009FAF21 /* ExpandedRow.h */,
+				1022ACE017AE9562009FAF21 /* RSSExpandedReader.cpp */,
+				1022ACE117AE9562009FAF21 /* RSSExpandedReader.h */,
+				1022ACDF17AE952A009FAF21 /* decoders */,
 			);
 			name = expanded;
 			path = rss/expanded;
@@ -1429,6 +1565,27 @@
 				105A9B7517ACEAFD008CF4B8 /* RSS14Reader.h in Headers */,
 				105A9B7717ACEAFD008CF4B8 /* RSSUtils.h in Headers */,
 				1022ACD917AE2DE2009FAF21 /* MultiFormatReader.h in Headers */,
+				1022ACDE17AE8F1C009FAF21 /* ExpandedRow.h in Headers */,
+				1022ACE317AE9562009FAF21 /* RSSExpandedReader.h in Headers */,
+				1022ACE717AEA6FE009FAF21 /* AbstractExpandedDecoder.h in Headers */,
+				1022ACEB17AEA810009FAF21 /* CurrentParsingState.h in Headers */,
+				1022ACEF17AEAAA0009FAF21 /* DecodedObject.h in Headers */,
+				1053FCA917AF4CBA00152CFD /* DecodedChar.h in Headers */,
+				1053FCAD17AF4E1B00152CFD /* DecodedNumeric.h in Headers */,
+				1053FCB117AF75B700152CFD /* DecodedInformation.h in Headers */,
+				1053FCB517AF77DE00152CFD /* FieldParser.h in Headers */,
+				104A576217B0AA0F00E0D728 /* BlockParsedResult.h in Headers */,
+				104A576617B0AC7800E0D728 /* GeneralAppIdDecoder.h in Headers */,
+				104A576A17B2B43A00E0D728 /* AnyAIDecoder.h in Headers */,
+				104A576E17B2B5FB00E0D728 /* AI01decoder.h in Headers */,
+				10807EE717B4884D00EB36AE /* AI01weightDecoder.h in Headers */,
+				10807EEB17B48A2800EB36AE /* AI013x0xDecoder.h in Headers */,
+				10807EEF17B4ADAB00EB36AE /* AI01AndOtherAIs.h in Headers */,
+				10807EF317B4AF1800EB36AE /* AI013x0x1xDecoder.h in Headers */,
+				10807EF717B4BB3D00EB36AE /* AI013103decoder.h in Headers */,
+				10807EFB17B4BCB000EB36AE /* AI01320xDecoder.h in Headers */,
+				10807EFF17B4BD9A00EB36AE /* AI01392xDecoder.h in Headers */,
+				10807F0317B4DBD600EB36AE /* AI01393xDecoder.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1695,6 +1852,27 @@
 				105A9B7217ACEAFD008CF4B8 /* Pair.cpp in Sources */,
 				105A9B7417ACEAFD008CF4B8 /* RSS14Reader.cpp in Sources */,
 				105A9B7617ACEAFD008CF4B8 /* RSSUtils.cpp in Sources */,
+				1022ACDD17AE8F1C009FAF21 /* ExpandedRow.cpp in Sources */,
+				1022ACE217AE9562009FAF21 /* RSSExpandedReader.cpp in Sources */,
+				1022ACE617AEA6FE009FAF21 /* AbstractExpandedDecoder.cpp in Sources */,
+				1022ACEA17AEA810009FAF21 /* CurrentParsingState.cpp in Sources */,
+				1022ACEE17AEAAA0009FAF21 /* DecodedObject.cpp in Sources */,
+				1053FCA817AF4CBA00152CFD /* DecodedChar.cpp in Sources */,
+				1053FCAC17AF4E1B00152CFD /* DecodedNumeric.cpp in Sources */,
+				1053FCB017AF75B700152CFD /* DecodedInformation.cpp in Sources */,
+				1053FCB417AF77DE00152CFD /* FieldParser.cpp in Sources */,
+				104A576117B0AA0F00E0D728 /* BlockParsedResult.cpp in Sources */,
+				104A576517B0AC7800E0D728 /* GeneralAppIdDecoder.cpp in Sources */,
+				104A576917B2B43A00E0D728 /* AnyAIDecoder.cpp in Sources */,
+				104A576D17B2B5FB00E0D728 /* AI01decoder.cpp in Sources */,
+				10807EE617B4884D00EB36AE /* AI01weightDecoder.cpp in Sources */,
+				10807EEA17B48A2800EB36AE /* AI013x0xDecoder.cpp in Sources */,
+				10807EEE17B4ADAB00EB36AE /* AI01AndOtherAIs.cpp in Sources */,
+				10807EF217B4AF1800EB36AE /* AI013x0x1xDecoder.cpp in Sources */,
+				10807EF617B4BB3D00EB36AE /* AI013103decoder.cpp in Sources */,
+				10807EFA17B4BCB000EB36AE /* AI01320xDecoder.cpp in Sources */,
+				10807EFE17B4BD9A00EB36AE /* AI01392xDecoder.cpp in Sources */,
+				10807F0217B4DBD600EB36AE /* AI01393xDecoder.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
