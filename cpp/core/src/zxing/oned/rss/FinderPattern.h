@@ -28,6 +28,8 @@ namespace zxing {
                 std::vector<int> &getStartEnd();
                 ArrayRef< Ref<ResultPoint> > getResultPoints();
                 bool operator==(const FinderPattern &other) const;
+                bool equals(const FinderPattern &other) const;
+                bool equals(Ref<FinderPattern> other) const;
             };
             
         }

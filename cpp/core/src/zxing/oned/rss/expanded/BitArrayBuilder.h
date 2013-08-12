@@ -9,6 +9,9 @@
 #ifndef __zxing_cpp__BitArrayBuilder__
 #define __zxing_cpp__BitArrayBuilder__
 
+#import <zxing/common/BitArray.h>
+#import <zxing/oned/rss/expanded/ExpandedPair.h>
+
 namespace zxing {
     namespace oned {
         namespace rss {
@@ -16,8 +19,8 @@ namespace zxing {
                 class BitArrayBuilder {
                 private:
                     BitArrayBuilder();
-                private:
-                    //static buildBitArray
+                public:
+                    static Ref<BitArray> buildBitArray(std::vector< Ref<ExpandedPair> > &pairs);
                 };
             }
         }

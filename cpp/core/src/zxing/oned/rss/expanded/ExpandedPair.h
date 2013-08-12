@@ -16,21 +16,22 @@ namespace zxing {
     namespace oned {
         namespace rss {
             namespace expanded {
-                class ExpandedPair {
+                class ExpandedPair  : public Counted {
                 private:
                     bool _mayBeLast;
                     Ref<DataCharacter> _leftChar;
                     Ref<DataCharacter> _rightChar;
                     Ref<FinderPattern> _finderPattern;
-                 private:   
-                    ExpandedPair(Ref<DataCharacter> leftChar, Ref<DataCharacter> rightChar, Ref<FinderPattern> finderPattern, bool mayBeLast);
-                    bool mayBeLast();
-                    Ref<DataCharacter> getLeftChar();
-                    Ref<DataCharacter> getRightChar();
-                    Ref<FinderPattern> getFinderPattern();
                 public:
-                    bool mustBeLast();
+                    ExpandedPair(Ref<DataCharacter> leftChar, Ref<DataCharacter> rightChar, Ref<FinderPattern> finderPattern, bool mayBeLast);
+                    Ref<DataCharacter> getLeftChar() const;
+                    Ref<DataCharacter> getRightChar() const;
+                    Ref<FinderPattern> getFinderPattern() const;
+                    bool mayBeLast();
+                    bool mustBeLast() const;
                     bool operator==(const ExpandedPair &other) const;
+                    bool equals(const ExpandedPair &other) const;
+                    bool equals(Ref<ExpandedPair> other) const;
                 };
             }
         }

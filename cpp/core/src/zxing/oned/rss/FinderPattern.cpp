@@ -15,7 +15,7 @@ using zxing::oned::rss::FinderPattern;
 
 FinderPattern::FinderPattern(int value, std::vector<int> &startEnd, int start, int end, int rowNumber) {
     _value = value;
-    _startEnd = startEnd;    
+    _startEnd = std::vector<int>(startEnd);
     Array< Ref<ResultPoint> >* resultPoints = new Array< Ref<ResultPoint> >();
     std::vector< Ref<ResultPoint> >& resultPointValues (resultPoints->values());
     resultPointValues.push_back(Ref<ResultPoint>(new ResultPoint(start, rowNumber)));
@@ -40,5 +40,14 @@ ArrayRef< Ref<ResultPoint> > FinderPattern::getResultPoints() {
 }
 
 bool FinderPattern::operator==(const FinderPattern &other) const {
+    return this->equals(other);
+}
+
+bool FinderPattern::equals(const FinderPattern &other) const {
     return _value == other._value;
+}
+
+bool FinderPattern::equals(Ref<FinderPattern> other) const {
+    if (other.empty()) return false;
+    return this->equals(*(other.object_));
 }
