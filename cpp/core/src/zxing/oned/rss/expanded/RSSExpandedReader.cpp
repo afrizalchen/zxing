@@ -118,7 +118,9 @@ Ref<Result> RSSExpandedReader::decodeRow(int rowNumber, Ref<BitArray> row) {
     try {
         std::vector< Ref<ExpandedPair> > pairs = decodeRow2pairs(rowNumber, row);
         //printf("decodeRow(%d) Odd\n", rowNumber);
-        return constructResult(pairs);
+        Ref<Result> result = constructResult(pairs);
+        this->reset();
+        return result;
     } catch (NotFoundException e) {
         // OK
     }
@@ -127,7 +129,9 @@ Ref<Result> RSSExpandedReader::decodeRow(int rowNumber, Ref<BitArray> row) {
     _startFromEven = true;
     std::vector< Ref<ExpandedPair> > pairs = decodeRow2pairs(rowNumber, row);
     //printf("decodeRow(%d) Even\n", rowNumber);
-    return constructResult(pairs);
+    Ref<Result> result = constructResult(pairs);
+    this->reset();
+    return result;
 }
 
 void RSSExpandedReader::reset() {
