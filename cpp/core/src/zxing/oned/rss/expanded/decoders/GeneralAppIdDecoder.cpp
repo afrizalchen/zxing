@@ -1,4 +1,4 @@
-¬//
+//
 //  GeneralAppIdDecoder.cpp
 //  ZXingWidget
 //
@@ -49,7 +49,7 @@ Ref<String> GeneralAppIdDecoder::decodeAllCodes(Ref<String> buff, int initialPos
         }
         currentPosition = info->getNewPosition();
     }while(true);
-    printf("GeneralAppIdDecoder::decodeAllCodes(%d) buff=%s", initialPosition, buff->getText().c_str());
+    printf("GeneralAppIdDecoder::decodeAllCodes(%d) buff=%s\n", initialPosition, buff->getText().c_str());
     return Ref<String>(new String(buff->getText()));
 }
 

@@ -38,6 +38,5 @@ Ref<String> AI01AndOtherAIs::parseInformation() {
     buff->append(oss.str());
     
     encodeCompressedGtinWithoutAI(buff, HEADER_SIZE + 4, initialGtinPosition);
-    printf("AI01AndOtherAIs::parseInformation() buff=%s\n", buff->getText().c_str());
     return getGeneralDecoder()->decodeAllCodes(buff, HEADER_SIZE + 44);
 }

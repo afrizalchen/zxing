@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1004CCA317ABC71D0097437C /* DataCharacter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1004CCA117ABC71D0097437C /* DataCharacter.cpp */; };
+		1004CCA417ABC71D0097437C /* DataCharacter.h in Headers */ = {isa = PBXBuildFile; fileRef = 1004CCA217ABC71D0097437C /* DataCharacter.h */; };
+		1004CCA717ABFA6C0097437C /* FinderPattern.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1004CCA517ABFA6C0097437C /* FinderPattern.cpp */; };
+		1004CCA817ABFA6C0097437C /* FinderPattern.h in Headers */ = {isa = PBXBuildFile; fileRef = 1004CCA617ABFA6C0097437C /* FinderPattern.h */; };
+		1004CCAB17AC00190097437C /* Pair.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1004CCA917AC00180097437C /* Pair.cpp */; };
+		1004CCAC17AC00190097437C /* Pair.h in Headers */ = {isa = PBXBuildFile; fileRef = 1004CCAA17AC00190097437C /* Pair.h */; };
+		1004CCAF17AC039A0097437C /* RSSUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1004CCAD17AC03990097437C /* RSSUtils.cpp */; };
+		1004CCB017AC039A0097437C /* RSSUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 1004CCAE17AC039A0097437C /* RSSUtils.h */; };
+		105A9B4617AC5E93008CF4B8 /* AbstractRSSReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 105A9B4417AC5E93008CF4B8 /* AbstractRSSReader.cpp */; };
+		105A9B4717AC5E93008CF4B8 /* AbstractRSSReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 105A9B4517AC5E93008CF4B8 /* AbstractRSSReader.h */; };
+		105A9B4A17AC679C008CF4B8 /* RSS14Reader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 105A9B4817AC679B008CF4B8 /* RSS14Reader.cpp */; };
+		105A9B4B17AC679C008CF4B8 /* RSS14Reader.h in Headers */ = {isa = PBXBuildFile; fileRef = 105A9B4917AC679B008CF4B8 /* RSS14Reader.h */; };
+		105A9B4F17ACB0A8008CF4B8 /* BitArrayBuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 105A9B4D17ACB0A8008CF4B8 /* BitArrayBuilder.cpp */; };
+		105A9B5017ACB0A8008CF4B8 /* BitArrayBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 105A9B4E17ACB0A8008CF4B8 /* BitArrayBuilder.h */; };
+		105A9B5317ACB161008CF4B8 /* ExpandedPair.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 105A9B5117ACB161008CF4B8 /* ExpandedPair.cpp */; };
+		105A9B5417ACB161008CF4B8 /* ExpandedPair.h in Headers */ = {isa = PBXBuildFile; fileRef = 105A9B5217ACB161008CF4B8 /* ExpandedPair.h */; };
 		3B5A492F17091807004E112F /* ChecksumException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B5A492D17091807004E112F /* ChecksumException.cpp */; };
 		3B5A493017091807004E112F /* ChecksumException.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B5A492E17091807004E112F /* ChecksumException.h */; };
 		3B5A493517091826004E112F /* CodaBarReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B5A493117091826004E112F /* CodaBarReader.cpp */; };
@@ -213,6 +229,22 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1004CCA117ABC71D0097437C /* DataCharacter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DataCharacter.cpp; path = rss/DataCharacter.cpp; sourceTree = "<group>"; };
+		1004CCA217ABC71D0097437C /* DataCharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataCharacter.h; path = rss/DataCharacter.h; sourceTree = "<group>"; };
+		1004CCA517ABFA6C0097437C /* FinderPattern.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FinderPattern.cpp; path = rss/FinderPattern.cpp; sourceTree = "<group>"; };
+		1004CCA617ABFA6C0097437C /* FinderPattern.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FinderPattern.h; path = rss/FinderPattern.h; sourceTree = "<group>"; };
+		1004CCA917AC00180097437C /* Pair.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Pair.cpp; path = rss/Pair.cpp; sourceTree = "<group>"; };
+		1004CCAA17AC00190097437C /* Pair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Pair.h; path = rss/Pair.h; sourceTree = "<group>"; };
+		1004CCAD17AC03990097437C /* RSSUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RSSUtils.cpp; path = rss/RSSUtils.cpp; sourceTree = "<group>"; };
+		1004CCAE17AC039A0097437C /* RSSUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSSUtils.h; path = rss/RSSUtils.h; sourceTree = "<group>"; };
+		105A9B4417AC5E93008CF4B8 /* AbstractRSSReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AbstractRSSReader.cpp; path = rss/AbstractRSSReader.cpp; sourceTree = "<group>"; };
+		105A9B4517AC5E93008CF4B8 /* AbstractRSSReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AbstractRSSReader.h; path = rss/AbstractRSSReader.h; sourceTree = "<group>"; };
+		105A9B4817AC679B008CF4B8 /* RSS14Reader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RSS14Reader.cpp; path = rss/RSS14Reader.cpp; sourceTree = "<group>"; };
+		105A9B4917AC679B008CF4B8 /* RSS14Reader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSS14Reader.h; path = rss/RSS14Reader.h; sourceTree = "<group>"; };
+		105A9B4D17ACB0A8008CF4B8 /* BitArrayBuilder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BitArrayBuilder.cpp; path = rss/expanded/BitArrayBuilder.cpp; sourceTree = "<group>"; };
+		105A9B4E17ACB0A8008CF4B8 /* BitArrayBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BitArrayBuilder.h; path = rss/expanded/BitArrayBuilder.h; sourceTree = "<group>"; };
+		105A9B5117ACB161008CF4B8 /* ExpandedPair.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ExpandedPair.cpp; path = rss/expanded/ExpandedPair.cpp; sourceTree = "<group>"; };
+		105A9B5217ACB161008CF4B8 /* ExpandedPair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExpandedPair.h; path = rss/expanded/ExpandedPair.h; sourceTree = "<group>"; };
 		3B5A492D17091807004E112F /* ChecksumException.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ChecksumException.cpp; sourceTree = "<group>"; };
 		3B5A492E17091807004E112F /* ChecksumException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChecksumException.h; sourceTree = "<group>"; };
 		3B5A493117091826004E112F /* CodaBarReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CodaBarReader.cpp; sourceTree = "<group>"; };
@@ -435,6 +467,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1004CCA017ABC6B80097437C /* rss */ = {
+			isa = PBXGroup;
+			children = (
+				1004CCA117ABC71D0097437C /* DataCharacter.cpp */,
+				1004CCA217ABC71D0097437C /* DataCharacter.h */,
+				1004CCA517ABFA6C0097437C /* FinderPattern.cpp */,
+				1004CCA617ABFA6C0097437C /* FinderPattern.h */,
+				1004CCA917AC00180097437C /* Pair.cpp */,
+				1004CCAA17AC00190097437C /* Pair.h */,
+				1004CCAD17AC03990097437C /* RSSUtils.cpp */,
+				1004CCAE17AC039A0097437C /* RSSUtils.h */,
+				105A9B4417AC5E93008CF4B8 /* AbstractRSSReader.cpp */,
+				105A9B4517AC5E93008CF4B8 /* AbstractRSSReader.h */,
+				105A9B4817AC679B008CF4B8 /* RSS14Reader.cpp */,
+				105A9B4917AC679B008CF4B8 /* RSS14Reader.h */,
+				105A9B4C17ACB08F008CF4B8 /* expanded */,
+			);
+			name = rss;
+			sourceTree = "<group>";
+		};
+		105A9B4C17ACB08F008CF4B8 /* expanded */ = {
+			isa = PBXGroup;
+			children = (
+				105A9B4D17ACB0A8008CF4B8 /* BitArrayBuilder.cpp */,
+				105A9B4E17ACB0A8008CF4B8 /* BitArrayBuilder.h */,
+				105A9B5117ACB161008CF4B8 /* ExpandedPair.cpp */,
+				105A9B5217ACB161008CF4B8 /* ExpandedPair.h */,
+			);
+			name = expanded;
+			sourceTree = "<group>";
+		};
 		3B83E983158E66C600A3B31F = {
 			isa = PBXGroup;
 			children = (
@@ -685,6 +748,7 @@
 		3B83EA1A158E679000A3B31F /* oned */ = {
 			isa = PBXGroup;
 			children = (
+				1004CCA017ABC6B80097437C /* rss */,
 				3B5A493117091826004E112F /* CodaBarReader.cpp */,
 				3B5A493217091826004E112F /* CodaBarReader.h */,
 				3B5A493317091826004E112F /* Code93Reader.cpp */,
@@ -962,6 +1026,14 @@
 				3BAC3A381724313500473974 /* BigUnsigned.hh in Headers */,
 				3BAC3A3A1724313500473974 /* BigUnsignedInABase.hh in Headers */,
 				3BAC3A3C1724313500473974 /* NumberlikeArray.hh in Headers */,
+				1004CCA417ABC71D0097437C /* DataCharacter.h in Headers */,
+				1004CCA817ABFA6C0097437C /* FinderPattern.h in Headers */,
+				1004CCAC17AC00190097437C /* Pair.h in Headers */,
+				1004CCB017AC039A0097437C /* RSSUtils.h in Headers */,
+				105A9B4717AC5E93008CF4B8 /* AbstractRSSReader.h in Headers */,
+				105A9B4B17AC679C008CF4B8 /* RSS14Reader.h in Headers */,
+				105A9B5017ACB0A8008CF4B8 /* BitArrayBuilder.h in Headers */,
+				105A9B5417ACB161008CF4B8 /* ExpandedPair.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1113,6 +1185,14 @@
 				3BAC3A351724313500473974 /* BigIntegerUtils.cc in Sources */,
 				3BAC3A371724313500473974 /* BigUnsigned.cc in Sources */,
 				3BAC3A391724313500473974 /* BigUnsignedInABase.cc in Sources */,
+				1004CCA317ABC71D0097437C /* DataCharacter.cpp in Sources */,
+				1004CCA717ABFA6C0097437C /* FinderPattern.cpp in Sources */,
+				1004CCAB17AC00190097437C /* Pair.cpp in Sources */,
+				1004CCAF17AC039A0097437C /* RSSUtils.cpp in Sources */,
+				105A9B4617AC5E93008CF4B8 /* AbstractRSSReader.cpp in Sources */,
+				105A9B4A17AC679C008CF4B8 /* RSS14Reader.cpp in Sources */,
+				105A9B4F17ACB0A8008CF4B8 /* BitArrayBuilder.cpp in Sources */,
+				105A9B5317ACB161008CF4B8 /* ExpandedPair.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

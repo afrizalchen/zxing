@@ -8,7 +8,12 @@
 //
 
 #import "ZXMainViewController.h"
+#import <AztecReader.h>
 #import <MultiFormatReader.h>
+#import <MultiFormatOneDReader.h>
+#import <FormatReader.h>
+#import <zxing/oned/rss/RSS14Reader.h>
+#import <zxing/oned/rss/expanded/RSSExpandedReader.h>
 #import <UniversalResultParser.h>
 #import <ParsedResult.h>
 #import <ResultAction.h>
@@ -51,10 +56,16 @@
 */
 
 - (IBAction)scan:(id)sender {
-  ZXingWidgetController *widController = [[ZXingWidgetController alloc] initWithDelegate:self showCancel:YES OneDMode:NO];
-  MultiFormatReader* qrcodeReader = [[MultiFormatReader alloc] init];
-  NSSet *readers = [[NSSet alloc ] initWithObjects:qrcodeReader,nil];
-  [qrcodeReader release];
+  ZXingWidgetController *widController = [[ZXingWidgetController alloc] initWithDelegate:self showCancel:YES OneDMode:NO showLicense:NO];
+    
+  AztecReader* aztecReader = [[AztecReader alloc] init];
+  //MultiFormatReader* qrcodeReader = [[MultiFormatReader alloc] init];
+  //MultiFormatOneDReader* oneDReader = [[MultiFormatOneDReader alloc] initWithHints:zxing::DecodeHints::RSS_14_HINT];
+  MultiFormatOneDReader* oneDReader = [[MultiFormatOneDReader alloc] initWithHints:zxing::DecodeHints::RSS_EXPANDED_HINT];
+    
+  NSSet *readers = [[NSSet alloc ] initWithObjects:aztecReader,oneDReader, nil];
+  //[qrcodeReader release];
+  [oneDReader release];
   widController.readers = readers;
   [readers release];
   NSBundle *mainBundle = [NSBundle mainBundle];
