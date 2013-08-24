@@ -30,6 +30,14 @@ AbstractExpandedDecoder::~AbstractExpandedDecoder() {
 
 }
 
+Ref<BitArray> AbstractExpandedDecoder::getInformation() {
+    return _information;
+}
+
+Ref<GeneralAppIdDecoder> AbstractExpandedDecoder::getGeneralDecoder() {
+    return _generalDecoder;
+}
+
 Ref<AbstractExpandedDecoder> AbstractExpandedDecoder::createDecoder(Ref<BitArray> information) {
     if (information->get(1)) {
         return Ref<AbstractExpandedDecoder>(new AI01AndOtherAIs(information));
@@ -62,14 +70,6 @@ Ref<AbstractExpandedDecoder> AbstractExpandedDecoder::createDecoder(Ref<BitArray
         case 62: return Ref<AbstractExpandedDecoder>(new AI013x0x1xDecoder(information, Ref<String>(new String("310")), Ref<String>(new String("17"))));
         case 63: return Ref<AbstractExpandedDecoder>(new AI013x0x1xDecoder(information, Ref<String>(new String("320")), Ref<String>(new String("17"))));
     }
-
+    
     throw new IllegalStateException("unknown decoder: ");// + information);
-}
-
-Ref<BitArray> AbstractExpandedDecoder::getInformation() {
-    return _information;
-}
-
-Ref<GeneralAppIdDecoder> AbstractExpandedDecoder::getGeneralDecoder() {
-    return _generalDecoder;
 }

@@ -329,7 +329,8 @@ Ref<String> FieldParser::parseFieldsInGeneralPurpose(Ref<String> rawInformation)
     
     Ref<String> firstTwoDigits(new String(rawInformation->getText().substr(0, 2)));
     
-    for (std::vector<int> dataLength : TWO_DIGIT_DATA_LENGTH) {
+    for (std::vector< std::vector<int> >::const_iterator it = TWO_DIGIT_DATA_LENGTH.begin(); it != TWO_DIGIT_DATA_LENGTH.end(); it++) {
+        std::vector<int> dataLength = *it;
         std::ostringstream oss;
         oss << std::setw(2) << std::setfill('0') << dataLength[0];
         std::string dataLength0 = oss.str();
@@ -346,7 +347,8 @@ Ref<String> FieldParser::parseFieldsInGeneralPurpose(Ref<String> rawInformation)
     }
     
     Ref<String> firstThreeDigits(new String(rawInformation->getText().substr(0, 3)));
-    for (std::vector<int> dataLength : THREE_DIGIT_DATA_LENGTH) {
+    for (std::vector< std::vector<int> >::const_iterator it = THREE_DIGIT_DATA_LENGTH.begin(); it != THREE_DIGIT_DATA_LENGTH.end(); it++) {
+        std::vector<int> dataLength = *it;
         std::ostringstream oss;
         oss << std::setw(3) << std::setfill('0') << dataLength[0];
         std::string dataLength0 = oss.str();
@@ -358,8 +360,8 @@ Ref<String> FieldParser::parseFieldsInGeneralPurpose(Ref<String> rawInformation)
         }
     }
     
-    
-    for (std::vector<int> dataLength : THREE_DIGIT_PLUS_DIGIT_DATA_LENGTH) {
+    for (std::vector< std::vector<int> >::const_iterator it = THREE_DIGIT_PLUS_DIGIT_DATA_LENGTH.begin(); it != THREE_DIGIT_PLUS_DIGIT_DATA_LENGTH.end(); it++) {
+        std::vector<int> dataLength = *it;
         std::ostringstream oss;
         oss << std::setw(3) << std::setfill('0') << dataLength[0];
         std::string dataLength0 = oss.str();
@@ -376,8 +378,8 @@ Ref<String> FieldParser::parseFieldsInGeneralPurpose(Ref<String> rawInformation)
     }
     
     Ref<String> firstFourDigits(new String(rawInformation->getText().substr(0, 4)));
-    
-    for (std::vector<int> dataLength : FOUR_DIGIT_DATA_LENGTH) {
+    for (std::vector< std::vector<int> >::const_iterator it = FOUR_DIGIT_DATA_LENGTH.begin(); it != FOUR_DIGIT_DATA_LENGTH.end(); it++) {
+        std::vector<int> dataLength = *it;
         std::ostringstream oss;
         oss << std::setw(4) << std::setfill('0') << dataLength[0];
         std::string dataLength0 = oss.str();

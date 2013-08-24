@@ -15,7 +15,8 @@ RSSUtils::RSSUtils() {}
 int RSSUtils::getRSSvalue(std::vector<int> &widths, int maxWidth, bool noNarrow) {
     int elements = widths.size();
     int n = 0;
-    for (int width : widths) {
+    for (std::vector<int>::iterator it = widths.begin(); it != widths.end(); it++) {
+        int width = *it;
         n += width;
     }
     int val = 0;

@@ -88,7 +88,8 @@ void RSS14Reader::addOrTally(std::vector< Ref<Pair> > &possiblePairs, Ref<Pair> 
         return;
     }
     boolean found = false;
-    for (Ref<Pair> other : possiblePairs) {
+    for (std::vector< Ref<Pair> >::iterator it = possiblePairs.begin(); it != possiblePairs.end(); it++) {
+        Ref<Pair> other = *it;
         if (other->getValue() == pair->getValue()) {
             other->incrementCount();
             found = true;

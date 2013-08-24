@@ -36,7 +36,8 @@ const DecodeHints DecodeHints::PRODUCT_HINT(
   UPC_E_HINT |
   EAN_13_HINT |
   EAN_8_HINT |
-  RSS_14_HINT
+  RSS_14_HINT |
+  RSS_EXPANDED_HINT
   );
 
 const DecodeHints DecodeHints::ONED_HINT(

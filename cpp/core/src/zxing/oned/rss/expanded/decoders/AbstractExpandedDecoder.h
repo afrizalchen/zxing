@@ -9,16 +9,16 @@
 #ifndef __ZXingWidget__AbstractExpandedDecoder__
 #define __ZXingWidget__AbstractExpandedDecoder__
 
-#import <zxing/common/Counted.h>
-#import <zxing/common/BitArray.h>
-#import <zxing/oned/rss/expanded/decoders/GeneralAppIdDecoder.h>
+#include <zxing/common/Counted.h>
+#include <zxing/common/BitArray.h>
+#include <zxing/oned/rss/expanded/decoders/GeneralAppIdDecoder.h>
 
 namespace zxing {
     namespace oned {
         namespace rss {
             namespace expanded {
                 namespace decoders {
-                    class AbstractExpandedDecoder : public Counted{
+                    class AbstractExpandedDecoder : public Counted {
                     private:
                         Ref<BitArray> _information;
                         Ref<GeneralAppIdDecoder> _generalDecoder;

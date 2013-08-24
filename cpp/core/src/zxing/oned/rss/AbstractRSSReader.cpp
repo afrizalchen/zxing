@@ -81,8 +81,8 @@ int AbstractRSSReader::parseFinderValue(std::vector<int> &counters, std::vector<
 
 int AbstractRSSReader::count(std::vector<int> &array) {
     int count = 0;
-    for (int a : array) {
-        count += a;
+    for (std::vector<int>::iterator it = array.begin(); it != array.end(); it++) {
+        count += *it;
     }
     return count;
 }
@@ -124,7 +124,8 @@ bool AbstractRSSReader::isFinderPattern(std::vector<int> &counters) {
         // passes ratio test in spec, but see if the counts are unreasonable
         int minCounter = std::numeric_limits<int>::max();
         int maxCounter = std::numeric_limits<int>::min();
-        for (int counter : counters) {
+        for (std::vector<int>::iterator it = counters.begin(); it != counters.end(); it++) {
+            int counter = *it;
             if (counter > maxCounter) {
                 maxCounter = counter;
             }

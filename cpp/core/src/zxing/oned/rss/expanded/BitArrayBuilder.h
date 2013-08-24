@@ -9,8 +9,8 @@
 #ifndef __zxing_cpp__BitArrayBuilder__
 #define __zxing_cpp__BitArrayBuilder__
 
-#import <zxing/common/BitArray.h>
-#import <zxing/oned/rss/expanded/ExpandedPair.h>
+#include <zxing/common/BitArray.h>
+#include <zxing/oned/rss/expanded/ExpandedPair.h>
 
 namespace zxing {
     namespace oned {

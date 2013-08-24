@@ -24,6 +24,7 @@ AI013103decoder::~AI013103decoder() {
 
 void AI013103decoder::addWeightCode(Ref<String> buf, int weight) {
     buf->append("(3103)");
+    weight = weight * 1;
 }
 
 int AI013103decoder::checkWeight(int weight) {

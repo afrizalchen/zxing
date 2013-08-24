@@ -111,13 +111,20 @@ RSSExpandedReader::RSSExpandedReader() {
 }
 
 Ref<Result> RSSExpandedReader::decodeRow(int rowNumber, Ref<BitArray> row) {
+    int width = row->getSize();
+    for(int i = 0; i < width; i++) {
+        printf("%d ", row->get(i) ? 1 : 0);
+        if ((i + 1) % 10 == 0) printf("- ");
+        if ((i + 1) % 40 == 0) printf("\n");
+    }
+    //printf("row-size:%d\n", width);
     // Rows can start with even pattern in case in prev rows there where odd number of patters.
     // So lets try twice
     _pairs.clear();
     _startFromEven = false;
     try {
+        //printf("RSSExpandedReader::decodeRow(%d) Odd\n", rowNumber);
         std::vector< Ref<ExpandedPair> > pairs = decodeRow2pairs(rowNumber, row);
-        //printf("decodeRow(%d) Odd\n", rowNumber);
         Ref<Result> result = constructResult(pairs);
         this->reset();
         return result;
@@ -127,8 +134,8 @@ Ref<Result> RSSExpandedReader::decodeRow(int rowNumber, Ref<BitArray> row) {
     
     _pairs.clear();
     _startFromEven = true;
+    //printf("RSSExpandedReader::decodeRow(%d) Even\n", rowNumber);
     std::vector< Ref<ExpandedPair> > pairs = decodeRow2pairs(rowNumber, row);
-    //printf("decodeRow(%d) Even\n", rowNumber);
     Ref<Result> result = constructResult(pairs);
     this->reset();
     return result;
@@ -153,7 +160,7 @@ std::vector< Ref<ExpandedPair> > RSSExpandedReader::decodeRow2pairs(int rowNumbe
         }
     }
     
-    //printf("decodeRow2Pair(%d, %d) Rows:%d Pairs:%d\n", rowNumber, row->getSize(), (int)_rows.size(), (int)_pairs.size());
+    //printf("RSSExpandedReader::decodeRow2Pair(rowNumber[%d], rowCnt[%d]) _rows:%d _pairs:%d\n", rowNumber, row->getSize(), (int)_rows.size(), (int)_pairs.size());
     
     // TODO: verify sequence of finder patterns as in checkPairSequence()
     if (checkChecksum()) {
@@ -264,7 +271,8 @@ std::vector< Ref<ExpandedPair> > RSSExpandedReader::checkRows(std::vector< Ref<E
 }
 
 bool RSSExpandedReader::isValidSequence(std::vector< Ref<ExpandedPair> > &pairs) {
-    for (std::vector<int> sequence : FINDER_PATTERN_SEQUENCES) {
+    for (std::vector< std::vector<int> >::const_iterator it = FINDER_PATTERN_SEQUENCES.begin(); it != FINDER_PATTERN_SEQUENCES.end(); it++) {
+        std::vector<int> sequence = *it;
         if (pairs.size() > sequence.size()) {
             continue;
         }
@@ -333,9 +341,12 @@ void RSSExpandedReader::removePartialRows(std::vector< Ref<ExpandedPair> > &pair
             continue;
         }
         boolean allFound = true;
-        for (Ref<ExpandedPair> p : r->getPairs()) {
+        std::vector< Ref<ExpandedPair> > &rPairs = r->getPairs();
+        for (std::vector< Ref<ExpandedPair> >::iterator it = rPairs.begin(); it != rPairs.end(); it++) {
+            Ref<ExpandedPair> p = *it;
             boolean found = false;
-            for (Ref<ExpandedPair> pp : pairs) {
+            for (std::vector< Ref<ExpandedPair> >::iterator itp = pairs.begin(); itp != pairs.end(); itp++) {
+                Ref<ExpandedPair> pp = *itp;
                 if (p->equals(pp)) {
                     found = true;
                     break;
@@ -358,12 +369,15 @@ void RSSExpandedReader::removePartialRows(std::vector< Ref<ExpandedPair> > &pair
 
 bool RSSExpandedReader::isPartialRow(std::vector< Ref<ExpandedPair> > &pairs, std::vector< Ref<ExpandedRow> > &rows) {
     // Returns true when one of the rows already contains all the pairs
-    for (Ref<ExpandedRow> r : rows) {
+    for (std::vector< Ref<ExpandedRow> >::iterator it = rows.begin(); it != rows.end(); it++) {
+        Ref<ExpandedRow> r = *it;
         boolean allFound = true;
-        for (Ref<ExpandedPair> p : pairs) {
+        for (std::vector< Ref<ExpandedPair> >::iterator itp = pairs.begin(); itp != pairs.end(); itp++) {
+            Ref<ExpandedPair> p = *itp;
             boolean found = false;
             std::vector< Ref<ExpandedPair> > &rPairs = r->getPairs();
-            for (Ref<ExpandedPair> pp : rPairs) {
+            for (std::vector< Ref<ExpandedPair> >::iterator itpp = rPairs.begin(); itpp != rPairs.end(); itpp++) {
+                Ref<ExpandedPair> pp = *itpp;
                 if (p->equals(pp)) {
                     found = true;
                     break;
@@ -437,7 +451,7 @@ bool RSSExpandedReader::checkChecksum() {
     
     int checkCharacterValue = 211 * (s - 4) + checksum;
 //    if (checkCharacterValue == checkCharacter->getValue()) {
-//        printf("checkChecksum() %d == %d p[%d] s[%d] cs[%d] \n", checkCharacterValue, checkCharacter->getValue(), (int)_pairs.size(), s, checksum);
+        //printf("RSSExpandedReader::checkChecksum() %d == %d s[%d] cs[%d] _rows[%d] _pairs[%d]\n", checkCharacterValue, checkCharacter->getValue(), s, checksum, (int)_rows.size(), (int)_pairs.size());
 //    }
     return checkCharacterValue == checkCharacter->getValue();
 }
